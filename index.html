@@ -389,6 +389,24 @@
       letter-spacing: 0.04em;
     }
 
+    .project-card--wip { opacity: 0.65; }
+    .project-card--wip:hover { opacity: 1; }
+
+    .wip-badge {
+      display: inline-block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 2px;
+      background: var(--tag-bg);
+      color: var(--muted);
+      vertical-align: middle;
+      margin-left: 8px;
+      font-weight: 400;
+    }
+
     .project-link {
       font-size: 12px;
       color: var(--accent);
@@ -475,9 +493,8 @@
 
       <p class="bio">
         I design agentic workflows, LLM integrations, and automation that
-        earns its place in production. My background is in NLP — from
-        before the transformer era — which gives me a grounded perspective
-        on what today's models actually do well. Two decades of software
+        earns its place in production. My background is in NLP — predating today's foundation models —
+        which gives me a grounded perspective on what they actually do well. Two decades of software
         engineering means knowing which tools to reach for, and which ones
         to skip. Currently available for freelance projects in the
         Netherlands or remotely.
@@ -516,56 +533,60 @@
   </div>
 
   <!-- PROJECTS -->
-  <!-- <section id="projects">
+  <section id="projects">
     <p class="section-label">Selected work</p>
     <div class="projects-grid">
 
       <div class="project-card">
-        <h3>Solana On-Chain Transaction Extractor</h3>
+        <h3>Research Companion</h3>
         <p>
-          Async Python pipeline using Helius RPC that classifies swaps, sends,
-          and receives across major Solana DEXes — detecting Jupiter, Orca, and
-          Raydium automatically. Full wallet history in seconds.
-        </p>
-        <div class="project-tags">
-          <span class="project-tag">Python</span>
-          <span class="project-tag">Solana</span>
-          <span class="project-tag">Helius</span>
-          <span class="project-tag">Async</span>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>AI Trading Monitor &amp; Scanner</h3>
-        <p>
-          Autonomous agent that monitors open positions and surfaces short-term
-          opportunities based on configurable signals. Runs independently,
-          filters noise, and sends only actionable alerts.
+          A personal AI research analyst that ingests almost anything — links,
+          articles, voice memos, photos, PDFs, or raw text — and returns
+          structured analysis tailored to you, with actionable next steps and
+          time estimates. Built to close the gap between information overload
+          and informed decisions.
         </p>
         <div class="project-tags">
           <span class="project-tag">Agentic AI</span>
-          <span class="project-tag">Python</span>
+          <span class="project-tag">Multimodal</span>
           <span class="project-tag">LLM</span>
-          <span class="project-tag">Market data</span>
+          <span class="project-tag">Python</span>
         </div>
+        <a href="https://github.com/johannespietsch/research-companion" class="project-link" target="_blank">View on GitHub ↗</a>
       </div>
 
       <div class="project-card">
-        <h3>Prompt Evaluation &amp; Content QA Framework</h3>
+        <h3>Agentic Trading &amp; Portfolio Management</h3>
         <p>
-          Structured framework for rewriting prompts and scoring AI-generated
-          responses across quality dimensions. Used in a marketing context to
-          lift output consistency and reduce manual review cycles.
+          An autonomous system for monitoring positions, scanning for
+          opportunities, and managing portfolios across multiple exchanges.
+          LLM-driven analysis filters noise and surfaces only what's
+          actionable — built for staying informed without being glued to a screen.
         </p>
         <div class="project-tags">
-          <span class="project-tag">Prompt engineering</span>
-          <span class="project-tag">LLM eval</span>
+          <span class="project-tag">Agentic AI</span>
+          <span class="project-tag">LLM</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Multi-exchange</span>
+        </div>
+      </div>
+
+      <div class="project-card project-card--wip">
+        <h3>LLM Evaluation &amp; Bias Analysis <span class="wip-badge">In development</span></h3>
+        <p>
+          A framework for systematically evaluating LLM outputs across quality,
+          consistency, and bias dimensions — with a focus on making model
+          behaviour legible and auditable.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">LLM Evaluation</span>
+          <span class="project-tag">Ethical AI</span>
           <span class="project-tag">Python</span>
         </div>
       </div>
 
     </div>
-  </section> -->
+  </section>
 
   <!-- DEV TOGGLE — remove before launch -->
   <div id="dev-toggle">
